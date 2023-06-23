@@ -1,0 +1,14 @@
+name: Testing Check Run
+
+on:
+  push
+  
+jobs:
+  testing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Message Print
+        id: message-print
+        shell: bash
+        run: |
+          echo "Message Sent."
